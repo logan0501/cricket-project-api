@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Document(collection = "teams")
-public class TeamDAO {
+public class Team {
     @Id
     private String teamId;
     @NotBlank(message = "Team name cannot be empty")
@@ -16,10 +16,10 @@ public class TeamDAO {
     private List<String> playerList = new ArrayList<>();
     private List<String> playing11 = new ArrayList<>();
 
-    public TeamDAO() {
+    public Team() {
     }
 
-    public TeamDAO(String teamName, List<String> playerList, List<String> playing11) {
+    public Team(String teamName, List<String> playerList, List<String> playing11) {
         this.teamName = teamName;
         this.playerList = playerList;
         this.playing11 = playing11;

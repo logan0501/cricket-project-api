@@ -1,21 +1,21 @@
 package com.logan.cricketProject.responseDTO;
 
-import com.logan.cricketProject.entity.TeamDAO;
+import com.logan.cricketProject.entity.Team;
 
 import java.util.List;
 
 public class TeamResponse {
-    List<TeamDAO> teams;
+    List<Team> teams;
 
-    public TeamResponse(List<TeamDAO> teams) {
+    public TeamResponse(List<Team> teams) {
         this.teams = teams;
     }
 
-    public List<TeamDAO> getTeams() {
+    public List<Team> getTeams() {
         return teams;
     }
 
-    public void setTeams(List<TeamDAO> teams) {
+    public void setTeams(List<Team> teams) {
         this.teams = teams;
     }
 }

@@ -1,15 +1,20 @@
 package com.logan.cricketProject.service.teamService;
 
-import com.logan.cricketProject.entity.TeamDAO;
+import com.logan.cricketProject.entity.Team;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface TeamService {
-    List<TeamDAO> findAllTeams();
+    List<Team> findAllTeams();
 
-    TeamDAO addNewTeam(TeamDAO teamDAO);
+    Team addNewTeam(Team team);
 
-    TeamDAO updateTeam(TeamDAO teamDAO);
+    Team updateTeam(Team team);
 
     void deleteTeamById(String id);
+
+    boolean teamExistById(String id);
+
+    Optional<Team> findById(String id);
 }
